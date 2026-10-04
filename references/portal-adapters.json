@@ -1,0 +1,14 @@
+{
+  "baidu": {
+    "fallback_search_url": "https://talent.baidu.com/jobs/list?recruitType=INTERN"
+  },
+  "nio": {
+    "fallback_search_url": "https://nio.jobs.feishu.cn/campus/position",
+    "url_replacements": [
+      {
+        "from": "/saas-career/position/",
+        "to": "/campus/position/"
+      }
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+interface:
+  display_name: "求职侦察 Agent"
+  short_description: "抓取官网 JD、核验有效性并按真实经历计算岗位相性"
+  default_prompt: "Use $job-scout to scan a company and rank its current internships by fit."
+policy:
+  allow_implicit_invocation: true
+

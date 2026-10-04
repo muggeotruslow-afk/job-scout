@@ -1,0 +1,20 @@
+{
+  "baidu": ["百度"],
+  "tencent": ["腾讯"],
+  "alibaba": ["阿里", "阿里巴巴"],
+  "netease": ["网易"],
+  "bytedance": ["字节", "字节跳动"],
+  "kuaishou": ["快手"],
+  "xiaohongshu": ["小红书"],
+  "jd": ["京东"],
+  "pdd": ["拼多多", "pinduoduo"],
+  "xiaomi": ["小米"],
+  "nio": ["蔚来"],
+  "minimax": ["MiniMax"],
+  "iflytek": ["科大讯飞", "讯飞"],
+  "huawei": ["华为"],
+  "vivo": [], "oppo": ["OPPO"], "transsion": ["传音"],
+  "cxmt": ["长鑫存储"], "sany": ["三一"], "dahua": ["大华"],
+  "chery": ["奇瑞"], "picc": ["中国人保", "人保"], "hellobike": ["哈啰"],
+  "genertec": ["中国通用技术"], "huolala": ["货拉拉"], "ucloud": ["UCloud"], "sugon": ["中科曙光", "曙光"]
+}

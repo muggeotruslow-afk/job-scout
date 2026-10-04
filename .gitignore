@@ -1,0 +1,20 @@
+# Local handoff contains personal paths and project history.
+/job-scout-开源发布交接-2026-10-02.md
+
+# Keep candidate files and scan results in these local directories.
+/data/
+/output/
+/local/
+# Python test temporary directories may remain after interrupted runs.
+/tmp*/
+# Recording archive and editing exports stay local; publish selected media separately.
+/录屏演示/
+.job-scout-verify-*.json
+.job-scout-fetch-*.json
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+.venv/
+node_modules/

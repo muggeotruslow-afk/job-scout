@@ -1,0 +1,2 @@
+# Optional: needed for companies other than Baidu. Python 3.10+.
+intern-scout @ git+https://github.com/LogicShao/intern-scout.git@8d108870dd7f1cdfed497383a51a409d86cd39a5

@@ -1,0 +1,943 @@
+{
+  "checked_at": "2026-10-03T14:09:00+08:00",
+  "environment": "Windows; Python3.12; Node24; installed Chrome; per-process direct connection",
+  "scope": "31家公司；本轮9家全量官方实习入口，其他修复仅做有界样本验收",
+  "stable_end_to_end_demonstration": [
+    "baidu"
+  ],
+  "claim_limit": "Adapters existing or portals reachable do not mean full JD, internship scope, pagination and detail verification have all passed.",
+  "records": [
+    {
+      "company": "baidu",
+      "name": "百度",
+      "fixed_entry": true,
+      "data_test": "jd_sample_pass",
+      "full_jd_sample_count": 3,
+      "internship_sample": true,
+      "detail_status": "active",
+      "official_url": "https://talent.baidu.com/jobs/detail/INTERN/8930fd37-ded0-439d-b859-446bbc09ddd8",
+      "note": "另已完成197条全量抓取、真实资料和虚构资料验收；虚构资料12条详情全部active。",
+      "evidence": [
+        "adapter-results.json",
+        "baidu-result.json"
+      ]
+    },
+    {
+      "company": "vivo",
+      "name": "vivo",
+      "fixed_entry": true,
+      "data_test": "jd_sample_pass",
+      "full_jd_sample_count": 3,
+      "internship_sample": true,
+      "detail_status": "active",
+      "official_url": "https://hr-campus.vivo.com/intern/detail?jobAdId=561288935",
+      "note": "完整JD抽样通过；北森详情链接改用门户UUID，并识别自定义可见申请控件，样本active。未全量扫描。",
+      "evidence": [
+        "adapter-results.json",
+        "vivo-result.json"
+      ],
+      "detail_check": {
+        "verified_at": "2026-10-03T05:45:01.142Z",
+        "method": "playwright_detail_page",
+        "requested_url": "https://hr-campus.vivo.com/intern/detail?jobAdId=33572111-23f9-49bf-a0df-70f0e841ee51",
+        "final_url": "https://hr-campus.vivo.com/intern/detail?jobAdId=33572111-23f9-49bf-a0df-70f0e841ee51",
+        "title_match": true,
+        "apply_control": true,
+        "apply_controls": [
+          {
+            "label": "立即投递",
+            "disabled": false
+          }
+        ],
+        "reason": "详情页岗位标题匹配且存在申请/投递控件"
+      }
+    },
+    {
+      "company": "xiaomi",
+      "name": "小米",
+      "fixed_entry": true,
+      "data_test": "two_page_browser_sample_pass",
+      "full_jd_sample_count": 3,
+      "internship_sample": true,
+      "detail_status": "active",
+      "official_url": "",
+      "note": "官网浏览器路径替换直接API的405路径；两页20条与详情样本通过，未做全量扫描。来源为校招实习，不一律算日常实习。",
+      "evidence": [
+        "adapter-results.json",
+        "xiaomi-result.json"
+      ],
+      "full_scan_count": null,
+      "total_reported": 554,
+      "pages": 2
+    },
+    {
+      "company": "nio",
+      "name": "蔚来",
+      "fixed_entry": true,
+      "data_test": "jd_sample_pass",
+      "full_jd_sample_count": 3,
+      "internship_sample": true,
+      "detail_status": "active",
+      "official_url": "https://nio.jobs.feishu.cn/campus/position/7687447327914068287/detail",
+      "note": "实习关键词取得完整JD；详情样本active。默认查询包含校招，必须分类。未全量扫描。",
+      "evidence": [
+        "adapter-results.json",
+        "nio-result.json"
+      ],
+      "detail_check": {
+        "verified_at": "2026-10-03T05:49:24.377Z",
+        "method": "playwright_detail_page",
+        "requested_url": "https://nio.jobs.feishu.cn/campus/position/7687447327914068287/detail",
+        "final_url": "https://nio.jobs.feishu.cn/campus/position/7687447327914068287/detail",
+        "title_match": true,
+        "apply_control": true,
+        "apply_controls": [
+          {
+            "label": "投递",
+            "disabled": false
+          }
+        ],
+        "reason": "详情页岗位标题匹配且存在申请/投递控件"
+      }
+    },
+    {
+      "company": "minimax",
+      "name": "MiniMax",
+      "fixed_entry": true,
+      "data_test": "jd_sample_pass",
+      "full_jd_sample_count": 3,
+      "internship_sample": true,
+      "detail_status": "active",
+      "official_url": "https://vrfi1sk8a0.jobs.feishu.cn/saas-career/position/7686409262847822123/detail",
+      "note": "完整JD抽样通过；修正379481门户详情路由，详情样本active。未全量扫描。",
+      "evidence": [
+        "adapter-results.json",
+        "minimax-result.json"
+      ],
+      "detail_check": {
+        "verified_at": "2026-10-03T05:45:10.025Z",
+        "method": "playwright_detail_page",
+        "requested_url": "https://vrfi1sk8a0.jobs.feishu.cn/379481/position/7686409262847822123/detail",
+        "final_url": "https://vrfi1sk8a0.jobs.feishu.cn/379481/position/7686409262847822123/detail",
+        "title_match": true,
+        "apply_control": true,
+        "apply_controls": [
+          {
+            "label": "投递",
+            "disabled": false
+          }
+        ],
+        "reason": "详情页岗位标题匹配且存在申请/投递控件"
+      }
+    },
+    {
+      "company": "iflytek",
+      "name": "科大讯飞",
+      "fixed_entry": true,
+      "data_test": "empty_result",
+      "full_jd_sample_count": 0,
+      "internship_sample": false,
+      "detail_status": "not_verified",
+      "official_url": "",
+      "note": "已对照官方实习页面和API，均为0条；页面明确提示2027届飞Young实习招聘已结束。仅代表此入口当前为空，不代表讯飞所有渠道无实习。",
+      "evidence": [
+        "adapter-results.json",
+        "iflytek-result.json"
+      ]
+    },
+    {
+      "company": "transsion",
+      "name": "传音",
+      "fixed_entry": true,
+      "data_test": "jd_sample_pass",
+      "full_jd_sample_count": 3,
+      "internship_sample": true,
+      "detail_status": "active",
+      "official_url": "https://transsion.zhiye.com/intern/detail?jobAdId=270964045",
+      "note": "完整JD抽样通过；北森详情链接改用门户UUID，并识别自定义可见申请控件，样本active。未全量扫描。",
+      "evidence": [
+        "adapter-results.json",
+        "transsion-result.json"
+      ],
+      "detail_check": {
+        "verified_at": "2026-10-03T05:47:50.034Z",
+        "method": "playwright_detail_page",
+        "requested_url": "https://transsion.zhiye.com/intern/detail?jobAdId=3e1dfdde-6596-4201-808c-eeb81cdff602",
+        "final_url": "https://transsion.zhiye.com/intern/detail?jobAdId=3e1dfdde-6596-4201-808c-eeb81cdff602",
+        "title_match": true,
+        "apply_control": true,
+        "apply_controls": [
+          {
+            "label": "立即投递",
+            "disabled": false
+          }
+        ],
+        "reason": "详情页岗位标题匹配且存在申请/投递控件"
+      }
+    },
+    {
+      "company": "cxmt",
+      "name": "长鑫存储",
+      "fixed_entry": true,
+      "data_test": "jd_sample_pass",
+      "full_jd_sample_count": 3,
+      "internship_sample": true,
+      "detail_status": "active",
+      "official_url": "https://cxmt.zhiye.com/intern/detail?jobAdId=621088206",
+      "note": "完整JD抽样通过；北森详情链接改用门户UUID，并识别自定义可见申请控件，样本active。未全量扫描。",
+      "evidence": [
+        "adapter-results.json",
+        "cxmt-result.json"
+      ],
+      "detail_check": {
+        "verified_at": "2026-10-03T05:47:58.720Z",
+        "method": "playwright_detail_page",
+        "requested_url": "https://cxmt.zhiye.com/intern/detail?jobAdId=29b8ea5c-e089-4e35-a1b9-5a954c1969e9",
+        "final_url": "https://cxmt.zhiye.com/intern/detail?jobAdId=29b8ea5c-e089-4e35-a1b9-5a954c1969e9",
+        "title_match": true,
+        "apply_control": true,
+        "apply_controls": [
+          {
+            "label": "立即投递",
+            "disabled": false
+          }
+        ],
+        "reason": "详情页岗位标题匹配且存在申请/投递控件"
+      }
+    },
+    {
+      "company": "sany",
+      "name": "三一",
+      "fixed_entry": true,
+      "data_test": "jd_sample_pass",
+      "full_jd_sample_count": 3,
+      "internship_sample": true,
+      "detail_status": "active",
+      "official_url": "https://sany.zhiye.com/intern/detail?jobAdId=270927112",
+      "note": "完整JD抽样通过；北森详情链接改用门户UUID，并识别自定义可见申请控件，样本active。未全量扫描。",
+      "evidence": [
+        "adapter-results.json",
+        "sany-result.json"
+      ],
+      "detail_check": {
+        "verified_at": "2026-10-03T05:48:08.029Z",
+        "method": "playwright_detail_page",
+        "requested_url": "https://sany.zhiye.com/intern/detail?jobAdId=870d2c9f-807e-45bd-b236-95c91e334c39",
+        "final_url": "https://sany.zhiye.com/intern/detail?jobAdId=870d2c9f-807e-45bd-b236-95c91e334c39",
+        "title_match": true,
+        "apply_control": true,
+        "apply_controls": [
+          {
+            "label": "立即投递",
+            "disabled": false
+          }
+        ],
+        "reason": "详情页岗位标题匹配且存在申请/投递控件"
+      }
+    },
+    {
+      "company": "dahua",
+      "name": "大华",
+      "fixed_entry": true,
+      "data_test": "jd_sample_pass",
+      "full_jd_sample_count": 3,
+      "internship_sample": true,
+      "detail_status": "active",
+      "official_url": "https://dahua.zhiye.com/intern/detail?jobAdId=230926942",
+      "note": "完整JD抽样通过；北森详情链接改用门户UUID，并识别自定义可见申请控件，样本active。未全量扫描。",
+      "evidence": [
+        "adapter-results.json",
+        "dahua-result.json"
+      ],
+      "detail_check": {
+        "verified_at": "2026-10-03T05:48:16.815Z",
+        "method": "playwright_detail_page",
+        "requested_url": "https://dahua.zhiye.com/intern/detail?jobAdId=a74d2921-6b63-4a99-9b3d-36d2237f5933",
+        "final_url": "https://dahua.zhiye.com/intern/detail?jobAdId=a74d2921-6b63-4a99-9b3d-36d2237f5933",
+        "title_match": true,
+        "apply_control": true,
+        "apply_controls": [
+          {
+            "label": "立即投递",
+            "disabled": false
+          }
+        ],
+        "reason": "详情页岗位标题匹配且存在申请/投递控件"
+      }
+    },
+    {
+      "company": "chery",
+      "name": "奇瑞",
+      "fixed_entry": true,
+      "data_test": "jd_sample_pass",
+      "full_jd_sample_count": 3,
+      "internship_sample": true,
+      "detail_status": "active",
+      "official_url": "https://chery.zhiye.com/intern/detail?jobAdId=561239990",
+      "note": "完整JD抽样通过；北森详情链接改用门户UUID，并识别自定义可见申请控件，样本active。未全量扫描。",
+      "evidence": [
+        "adapter-results.json",
+        "chery-result.json"
+      ],
+      "detail_check": {
+        "verified_at": "2026-10-03T05:48:25.239Z",
+        "method": "playwright_detail_page",
+        "requested_url": "https://chery.zhiye.com/intern/detail?jobAdId=3abedc55-f4f7-4fe2-bb06-634bec173559",
+        "final_url": "https://chery.zhiye.com/intern/detail?jobAdId=3abedc55-f4f7-4fe2-bb06-634bec173559",
+        "title_match": true,
+        "apply_control": true,
+        "apply_controls": [
+          {
+            "label": "立即投递",
+            "disabled": false
+          }
+        ],
+        "reason": "详情页岗位标题匹配且存在申请/投递控件"
+      }
+    },
+    {
+      "company": "picc",
+      "name": "中国人保",
+      "fixed_entry": true,
+      "data_test": "jd_sample_pass",
+      "full_jd_sample_count": 3,
+      "internship_sample": true,
+      "detail_status": "active",
+      "official_url": "https://picc.zhiye.com/intern/detail?jobAdId=351611460",
+      "note": "完整JD抽样通过；北森详情链接改用门户UUID，并识别自定义可见申请控件，样本active。未全量扫描。",
+      "evidence": [
+        "adapter-results.json",
+        "picc-result.json"
+      ],
+      "detail_check": {
+        "verified_at": "2026-10-03T05:48:33.647Z",
+        "method": "playwright_detail_page",
+        "requested_url": "https://picc.zhiye.com/intern/detail?jobAdId=fe46db81-f381-478c-9f77-137fa4a12791",
+        "final_url": "https://picc.zhiye.com/intern/detail?jobAdId=fe46db81-f381-478c-9f77-137fa4a12791",
+        "title_match": true,
+        "apply_control": true,
+        "apply_controls": [
+          {
+            "label": "立即投递",
+            "disabled": false
+          }
+        ],
+        "reason": "详情页岗位标题匹配且存在申请/投递控件"
+      }
+    },
+    {
+      "company": "hellobike",
+      "name": "哈啰",
+      "fixed_entry": true,
+      "data_test": "jd_sample_pass",
+      "full_jd_sample_count": 3,
+      "internship_sample": true,
+      "detail_status": "active",
+      "official_url": "https://hellobike.zhiye.com/intern/detail?jobAdId=511210556",
+      "note": "完整JD抽样通过；北森详情链接改用门户UUID，并识别自定义可见申请控件，样本active。未全量扫描。",
+      "evidence": [
+        "adapter-results.json",
+        "hellobike-result.json"
+      ],
+      "detail_check": {
+        "verified_at": "2026-10-03T05:48:41.944Z",
+        "method": "playwright_detail_page",
+        "requested_url": "https://hellobike.zhiye.com/intern/detail?jobAdId=9ffa6af9-2d7d-4cd1-af4e-7d8a669e99a5",
+        "final_url": "https://hellobike.zhiye.com/intern/detail?jobAdId=9ffa6af9-2d7d-4cd1-af4e-7d8a669e99a5",
+        "title_match": true,
+        "apply_control": true,
+        "apply_controls": [
+          {
+            "label": "立即投递",
+            "disabled": false
+          }
+        ],
+        "reason": "详情页岗位标题匹配且存在申请/投递控件"
+      }
+    },
+    {
+      "company": "genertec",
+      "name": "中国通用技术",
+      "fixed_entry": true,
+      "data_test": "jd_sample_pass",
+      "full_jd_sample_count": 3,
+      "internship_sample": true,
+      "detail_status": "active",
+      "official_url": "https://genertec.zhiye.com/intern/detail?jobAdId=390833064",
+      "note": "完整JD抽样通过；北森详情链接改用门户UUID，并识别自定义可见申请控件，样本active。未全量扫描。",
+      "evidence": [
+        "adapter-results.json",
+        "genertec-result.json"
+      ],
+      "detail_check": {
+        "verified_at": "2026-10-03T05:48:50.336Z",
+        "method": "playwright_detail_page",
+        "requested_url": "https://genertec.zhiye.com/intern/detail?jobAdId=5643f35f-3a07-496b-8c57-0947a5ea50a1",
+        "final_url": "https://genertec.zhiye.com/intern/detail?jobAdId=5643f35f-3a07-496b-8c57-0947a5ea50a1",
+        "title_match": true,
+        "apply_control": true,
+        "apply_controls": [
+          {
+            "label": "立即投递",
+            "disabled": false
+          }
+        ],
+        "reason": "详情页岗位标题匹配且存在申请/投递控件"
+      }
+    },
+    {
+      "company": "huolala",
+      "name": "货拉拉",
+      "fixed_entry": true,
+      "data_test": "jd_sample_pass",
+      "full_jd_sample_count": 3,
+      "internship_sample": true,
+      "detail_status": "active",
+      "official_url": "https://huolala.zhiye.com/intern/detail?jobAdId=561275878",
+      "note": "完整JD抽样通过；北森详情链接改用门户UUID，并识别自定义可见申请控件，样本active。未全量扫描。",
+      "evidence": [
+        "adapter-results.json",
+        "huolala-result.json"
+      ],
+      "detail_check": {
+        "verified_at": "2026-10-03T05:48:58.750Z",
+        "method": "playwright_detail_page",
+        "requested_url": "https://huolala.zhiye.com/intern/detail?jobAdId=968396ea-4391-4ee8-bf73-31febae3731c",
+        "final_url": "https://huolala.zhiye.com/intern/detail?jobAdId=968396ea-4391-4ee8-bf73-31febae3731c",
+        "title_match": true,
+        "apply_control": true,
+        "apply_controls": [
+          {
+            "label": "立即投递",
+            "disabled": false
+          }
+        ],
+        "reason": "详情页岗位标题匹配且存在申请/投递控件"
+      }
+    },
+    {
+      "company": "ucloud",
+      "name": "UCloud",
+      "fixed_entry": true,
+      "data_test": "jd_sample_pass",
+      "full_jd_sample_count": 1,
+      "internship_sample": true,
+      "detail_status": "active",
+      "official_url": "https://ucloud.zhiye.com/intern/detail?jobAdId=190286871",
+      "note": "完整JD抽样通过；北森详情链接改用门户UUID，并识别自定义可见申请控件，样本active。未全量扫描。",
+      "evidence": [
+        "adapter-results.json",
+        "ucloud-result.json"
+      ],
+      "detail_check": {
+        "verified_at": "2026-10-03T05:49:07.476Z",
+        "method": "playwright_detail_page",
+        "requested_url": "https://ucloud.zhiye.com/intern/detail?jobAdId=ec65be38-3dfb-4c7d-b410-9fa134e8832f",
+        "final_url": "https://ucloud.zhiye.com/intern/detail?jobAdId=ec65be38-3dfb-4c7d-b410-9fa134e8832f",
+        "title_match": true,
+        "apply_control": true,
+        "apply_controls": [
+          {
+            "label": "立即投递",
+            "disabled": false
+          }
+        ],
+        "reason": "详情页岗位标题匹配且存在申请/投递控件"
+      }
+    },
+    {
+      "company": "sugon",
+      "name": "中科曙光",
+      "fixed_entry": true,
+      "data_test": "jd_sample_pass",
+      "full_jd_sample_count": 3,
+      "internship_sample": true,
+      "detail_status": "active",
+      "official_url": "https://sugon.zhiye.com/intern/detail?jobAdId=151166170",
+      "note": "完整JD抽样通过；北森详情链接改用门户UUID，并识别自定义可见申请控件，样本active。未全量扫描。",
+      "evidence": [
+        "adapter-results.json",
+        "sugon-result.json"
+      ],
+      "detail_check": {
+        "verified_at": "2026-10-03T05:49:15.952Z",
+        "method": "playwright_detail_page",
+        "requested_url": "https://sugon.zhiye.com/intern/detail?jobAdId=ba677e44-33bb-47ae-b264-e5944dee830e",
+        "final_url": "https://sugon.zhiye.com/intern/detail?jobAdId=ba677e44-33bb-47ae-b264-e5944dee830e",
+        "title_match": true,
+        "apply_control": true,
+        "apply_controls": [
+          {
+            "label": "立即投递",
+            "disabled": false
+          }
+        ],
+        "reason": "详情页岗位标题匹配且存在申请/投递控件"
+      }
+    },
+    {
+      "company": "huawei",
+      "name": "华为",
+      "fixed_entry": true,
+      "data_test": "full_official_scan_pass",
+      "full_jd_sample_count": 0,
+      "internship_sample": true,
+      "detail_status": "active",
+      "official_url": "",
+      "note": "已替换旧空接口，读取新版官网公开租户/环境路由参数；完整31条、4页，详情样本active。为官方实习入口，不一律算日常实习。",
+      "evidence": [
+        "local/integration/full/huawei.json"
+      ],
+      "full_scan_count": 31,
+      "total_reported": 31,
+      "pages": 4,
+      "pagination": {
+        "complete": true,
+        "stop_reason": "authoritative_total_reached",
+        "page_size": 10,
+        "pages_fetched": 4,
+        "max_pages": 10,
+        "authoritative_total": 31,
+        "rows_received": 31,
+        "duplicate_rows": 0
+      },
+      "detail_check": {
+        "verified_at": "2026-10-03T06:06:58.099Z",
+        "method": "playwright_detail_page",
+        "requested_url": "https://career.huawei.com/cn/job-details?advertisementId=30865",
+        "final_url": "https://career.huawei.com/cn/job-details?advertisementId=30865",
+        "title_match": true,
+        "apply_control": true,
+        "apply_controls": [
+          {
+            "label": "申请",
+            "disabled": false
+          }
+        ],
+        "reason": "详情页岗位标题匹配且存在申请/投递控件"
+      }
+    },
+    {
+      "company": "oppo",
+      "name": "OPPO",
+      "fixed_entry": true,
+      "data_test": "jd_sample_pass",
+      "full_jd_sample_count": 3,
+      "internship_sample": true,
+      "detail_status": "active",
+      "official_url": "https://careers.oppo.com/university/oppo/campus/post?recruitType=Intern",
+      "note": "完整JD抽样通过；详情路由增加职位ID，识别真实投递岗位控件。来源为寻梦实习，需区分日常实习。",
+      "evidence": [
+        "adapter-results.json",
+        "oppo-result.json"
+      ],
+      "detail_check": {
+        "verified_at": "2026-10-03T05:57:50.872Z",
+        "method": "playwright_detail_page",
+        "requested_url": "https://careers.oppo.com/university/oppo/campus/post/1717?recruitType=Intern",
+        "final_url": "https://careers.oppo.com/university/oppo/campus/post/1717?recruitType=Intern",
+        "title_match": true,
+        "apply_control": true,
+        "apply_controls": [
+          {
+            "label": "投递岗位",
+            "disabled": false
+          }
+        ],
+        "reason": "详情页岗位标题匹配且存在申请/投递控件"
+      }
+    },
+    {
+      "company": "jd",
+      "name": "京东",
+      "fixed_entry": true,
+      "data_test": "full_official_scan_pass",
+      "full_jd_sample_count": 3,
+      "internship_sample": true,
+      "detail_status": "active",
+      "official_url": "https://zhaopin.jd.com/web/job/job_info_list/176853",
+      "note": "已替换社招API，动态读取校园实习计划；详情改为真实details路由。实习计划不等于全部日常实习。",
+      "evidence": [
+        "local/integration/full/jd.json"
+      ],
+      "full_scan_count": 104,
+      "total_reported": 104,
+      "pages": 11,
+      "pagination": {
+        "complete": true,
+        "stop_reason": "authoritative_total_reached",
+        "page_size": 10,
+        "pages_fetched": 11,
+        "max_pages": 300,
+        "authoritative_total": 104
+      },
+      "detail_check": {
+        "verified_at": "2026-10-03T05:45:58.058Z",
+        "method": "playwright_detail_page",
+        "requested_url": "https://campus.jd.com/#/details?id=4960&type=internship",
+        "final_url": "https://campus.jd.com/#/details?id=4960&type=internship",
+        "title_match": true,
+        "apply_control": true,
+        "apply_controls": [
+          {
+            "label": "投递简历",
+            "disabled": false
+          }
+        ],
+        "reason": "详情页岗位标题匹配且存在申请/投递控件"
+      }
+    },
+    {
+      "company": "pdd",
+      "name": "拼多多",
+      "fixed_entry": true,
+      "data_test": "full_official_scan_pass",
+      "full_jd_sample_count": 0,
+      "internship_sample": true,
+      "detail_status": "active",
+      "official_url": "",
+      "note": "已替换旧DOM卡片抓取，读取官方实习API与独立详情，任职要求完整。当前入口只有2条，其中含校园大使，不是AI产品岗位保证。",
+      "evidence": [
+        "local/integration/full/pdd.json"
+      ],
+      "full_scan_count": 2,
+      "total_reported": 2,
+      "pages": 1,
+      "pagination": {
+        "complete": true,
+        "stop_reason": "authoritative_total_reached",
+        "page_size": 10,
+        "pages_fetched": 1,
+        "max_pages": 300,
+        "authoritative_total": 2
+      },
+      "detail_check": {
+        "verified_at": "2026-10-03T05:46:01.780Z",
+        "method": "playwright_detail_page",
+        "requested_url": "https://careers.pddglobalhr.com/campus/intern/detail?positionId=8999575e-951d-43ad-b262-2abb1a920787",
+        "final_url": "https://careers.pddglobalhr.com/campus/intern/detail?positionId=8999575e-951d-43ad-b262-2abb1a920787",
+        "title_match": true,
+        "apply_control": true,
+        "apply_controls": [
+          {
+            "label": "简历投递",
+            "disabled": false
+          }
+        ],
+        "reason": "详情页岗位标题匹配且存在申请/投递控件"
+      }
+    },
+    {
+      "company": "tencent",
+      "name": "腾讯",
+      "fixed_entry": true,
+      "data_test": "full_official_scan_pass",
+      "full_jd_sample_count": 1,
+      "internship_sample": true,
+      "detail_status": "active",
+      "official_url": "https://join.qq.com/post.html",
+      "note": "官网动态发现日常实习项目，兼容最后一页的负数项目制职位ID。",
+      "evidence": [
+        "local/integration/full/tencent.json"
+      ],
+      "full_scan_count": 70,
+      "total_reported": 70,
+      "pages": 7,
+      "pagination": {
+        "complete": true,
+        "stop_reason": "authoritative_total_reached",
+        "page_size": 10,
+        "pages_fetched": 7,
+        "max_pages": 100,
+        "authoritative_total": 70,
+        "rows_received": 70,
+        "duplicate_rows": 0
+      },
+      "detail_check": {
+        "verified_at": "2026-10-03T05:45:45.106Z",
+        "method": "playwright_detail_page",
+        "requested_url": "https://join.qq.com/post_detail.html?postid=1224696384415040513",
+        "final_url": "https://join.qq.com/post_detail.html?postid=1224696384415040513",
+        "title_match": true,
+        "apply_control": true,
+        "apply_controls": [
+          {
+            "label": "投递简历",
+            "disabled": false
+          }
+        ],
+        "reason": "详情页岗位标题匹配且存在申请/投递控件"
+      }
+    },
+    {
+      "company": "alibaba",
+      "name": "阿里巴巴",
+      "fixed_entry": true,
+      "data_test": "full_official_scan_pass",
+      "full_jd_sample_count": 1,
+      "internship_sample": true,
+      "detail_status": "active",
+      "official_url": "https://campus-talent.alibaba.com/campus/position?batchId=100000560002",
+      "note": "匿名浏览器使用官网实时CSRF状态，动态发现日常实习批次；不保存或硬编码会话令牌。",
+      "evidence": [
+        "local/integration/full/alibaba.json"
+      ],
+      "full_scan_count": 367,
+      "total_reported": 367,
+      "pages": 37,
+      "pagination": {
+        "complete": true,
+        "stop_reason": "authoritative_total_reached",
+        "page_size": 10,
+        "max_pages": 300,
+        "pages_fetched": 37,
+        "authoritative_total": 367
+      },
+      "detail_check": {
+        "verified_at": "2026-10-03T05:54:44.631Z",
+        "method": "playwright_detail_page",
+        "requested_url": "https://campus-talent.alibaba.com/campus/position/199904360006",
+        "final_url": "https://campus-talent.alibaba.com/campus/position/199904360006",
+        "title_match": true,
+        "apply_control": true,
+        "apply_controls": [
+          {
+            "label": "Apply",
+            "disabled": false
+          }
+        ],
+        "reason": "详情页岗位标题匹配且存在申请/投递控件"
+      }
+    },
+    {
+      "company": "netease",
+      "name": "网易",
+      "fixed_entry": true,
+      "data_test": "full_official_scan_pass",
+      "full_jd_sample_count": 1,
+      "internship_sample": true,
+      "detail_status": "active",
+      "official_url": "https://hr.163.com/job-list.html",
+      "note": "修正currentPage分页，读取实习类型；浏览器采用原生UA避免跳回首页。实习不一律等于日常实习。",
+      "evidence": [
+        "local/integration/full/netease.json"
+      ],
+      "full_scan_count": 563,
+      "total_reported": 563,
+      "pages": 57,
+      "pagination": {
+        "complete": true,
+        "stop_reason": "authoritative_total_reached",
+        "page_size": 10,
+        "pages_fetched": 57,
+        "max_pages": 300,
+        "authoritative_total": 563
+      },
+      "detail_check": {
+        "verified_at": "2026-10-03T05:45:48.699Z",
+        "method": "playwright_detail_page",
+        "requested_url": "https://hr.163.com/job-detail.html?id=77578",
+        "final_url": "https://hr.163.com/job-detail.html?id=77578",
+        "title_match": true,
+        "apply_control": true,
+        "apply_controls": [
+          {
+            "label": "申 请",
+            "disabled": false
+          }
+        ],
+        "reason": "详情页岗位标题匹配且存在申请/投递控件"
+      }
+    },
+    {
+      "company": "bytedance",
+      "name": "字节跳动",
+      "fixed_entry": true,
+      "data_test": "full_official_scan_pass",
+      "full_jd_sample_count": 1,
+      "internship_sample": true,
+      "detail_status": "active",
+      "official_url": "https://jobs.bytedance.com/campus/position",
+      "note": "匿名浏览器执行官网自身分页查询，动态发现日常实习项目。",
+      "evidence": [
+        "local/integration/full/bytedance.json"
+      ],
+      "full_scan_count": 2703,
+      "total_reported": 2703,
+      "pages": 55,
+      "pagination": {
+        "complete": true,
+        "stop_reason": "authoritative_total_reached",
+        "page_size": 50,
+        "max_pages": 300,
+        "pages_fetched": 55,
+        "authoritative_total": 2703
+      },
+      "detail_check": {
+        "verified_at": "2026-10-03T05:46:09.734Z",
+        "method": "playwright_detail_page",
+        "requested_url": "https://jobs.bytedance.com/campus/position/7679030661802887477/detail",
+        "final_url": "https://jobs.bytedance.com/campus/position/7679030661802887477/detail",
+        "title_match": true,
+        "apply_control": true,
+        "apply_controls": [
+          {
+            "label": "投递",
+            "disabled": false
+          }
+        ],
+        "reason": "详情页岗位标题匹配且存在申请/投递控件"
+      }
+    },
+    {
+      "company": "kuaishou",
+      "name": "快手",
+      "fixed_entry": true,
+      "data_test": "full_official_scan_pass",
+      "full_jd_sample_count": 1,
+      "internship_sample": true,
+      "detail_status": "uncertain",
+      "official_url": "https://zhaopin.kuaishou.cn/recruit/e/#/official/trainee/",
+      "note": "官网日常实习入口。总数为原始行数，重复ID去重；样本申请按钮需用户确认隐私条款，保持uncertain，不代替用户接受条款。",
+      "evidence": [
+        "local/integration/full/kuaishou.json"
+      ],
+      "full_scan_count": 1124,
+      "total_reported": 1135,
+      "pages": 114,
+      "pagination": {
+        "complete": true,
+        "stop_reason": "authoritative_total_reached",
+        "page_size": 10,
+        "pages_fetched": 114,
+        "max_pages": 200,
+        "authoritative_total": 1135,
+        "rows_received": 1135,
+        "duplicate_rows": 11
+      },
+      "detail_check": {
+        "verified_at": "2026-10-03T05:54:41.633Z",
+        "method": "playwright_detail_page",
+        "requested_url": "https://zhaopin.kuaishou.cn/recruit/e/#/official/trainee/job-info/32532",
+        "final_url": "https://zhaopin.kuaishou.cn/recruit/e/#/official/trainee/job-info/32532",
+        "title_match": true,
+        "apply_control": false,
+        "apply_controls": [
+          {
+            "label": "投递简历",
+            "disabled": true
+          }
+        ],
+        "reason": "岗位标题匹配，但申请控件禁用；可能需用户登录或确认平台条款，未执行这些操作"
+      }
+    },
+    {
+      "company": "xiaohongshu",
+      "name": "小红书",
+      "fixed_entry": true,
+      "data_test": "full_official_scan_pass",
+      "full_jd_sample_count": 1,
+      "internship_sample": true,
+      "detail_status": "active",
+      "official_url": "https://job.xiaohongshu.com/campus/intern",
+      "note": "取实习入口，读取完整职责与任职要求，项目名称保留；不宣称所有项目均为日常实习。",
+      "evidence": [
+        "local/integration/full/xiaohongshu.json"
+      ],
+      "full_scan_count": 229,
+      "total_reported": 229,
+      "pages": 23,
+      "pagination": {
+        "complete": true,
+        "stop_reason": "authoritative_total_reached",
+        "page_size": 10,
+        "pages_fetched": 23,
+        "max_pages": 300,
+        "authoritative_total": 229
+      },
+      "detail_check": {
+        "verified_at": "2026-10-03T05:45:51.520Z",
+        "method": "playwright_detail_page",
+        "requested_url": "https://job.xiaohongshu.com/campus/intern/position/14163",
+        "final_url": "https://job.xiaohongshu.com/campus/intern/position/14163",
+        "title_match": true,
+        "apply_control": true,
+        "apply_controls": [
+          {
+            "label": "投递简历",
+            "disabled": false
+          }
+        ],
+        "reason": "详情页岗位标题匹配且存在申请/投递控件"
+      }
+    },
+    {
+      "company": "meituan",
+      "name": "美团",
+      "fixed_entry": false,
+      "data_test": "portal_only",
+      "full_jd_sample_count": 0,
+      "internship_sample": false,
+      "detail_status": "not_verified",
+      "official_url": "https://zhaopin.meituan.com/web/campus",
+      "note": "官方校园入口可渲染；本轮仅入口/筛选接口检查，未完成JD抓取验收。",
+      "evidence": [
+        "meituan-browser.json"
+      ]
+    },
+    {
+      "company": "bilibili",
+      "name": "哔哩哔哩",
+      "fixed_entry": false,
+      "data_test": "portal_only",
+      "full_jd_sample_count": 0,
+      "internship_sample": false,
+      "detail_status": "not_verified",
+      "official_url": "https://jobs.bilibili.com/",
+      "note": "直接HTTP入口412，浏览器可显示招聘首页；未完成JD抓取验收。",
+      "evidence": [
+        "bilibili-browser.json"
+      ]
+    },
+    {
+      "company": "didi",
+      "name": "滴滴",
+      "fixed_entry": false,
+      "data_test": "portal_only",
+      "full_jd_sample_count": 0,
+      "internship_sample": false,
+      "detail_status": "not_verified",
+      "official_url": "https://careers.didiglobal.com/",
+      "note": "本轮访问的是海外招聘入口，不代表国内校招或日常实习，不能列入国内可用清单。",
+      "evidence": [
+        "didi-browser.json"
+      ]
+    },
+    {
+      "company": "ctrip",
+      "name": "携程",
+      "fixed_entry": false,
+      "data_test": "portal_only",
+      "full_jd_sample_count": 0,
+      "internship_sample": false,
+      "detail_status": "not_verified",
+      "official_url": "https://careers.ctrip.com/",
+      "note": "官方招聘首页可渲染；未完成JD抓取验收。",
+      "evidence": [
+        "ctrip-browser.json"
+      ]
+    }
+  ],
+  "fixed_scan_verified": [
+    "baidu",
+    "tencent",
+    "netease",
+    "xiaohongshu",
+    "kuaishou",
+    "jd",
+    "pdd",
+    "alibaba",
+    "bytedance",
+    "huawei"
+  ]
+}
