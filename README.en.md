@@ -7,7 +7,7 @@
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-orange" alt="MIT license"></a>
   <img src="https://img.shields.io/badge/platform-Windows-blue" alt="Windows tested">
-  <a href="https://github.com/muggeotruslow-afk/job-scout/releases/tag/v0.1.0"><img src="https://img.shields.io/badge/release-v0.1.0-blue" alt="v0.1.0"></a>
+  <a href="https://github.com/muggeotruslow-afk/job-scout/releases/tag/v0.1.1"><img src="https://img.shields.io/badge/release-v0.1.1-blue" alt="v0.1.1"></a>
   <img src="https://img.shields.io/badge/type-AI%20Skill-teal" alt="AI Skill">
 </p>
 
@@ -42,7 +42,7 @@ The demos use a previously confirmed fictional candidate. The search recording i
 
 ## Installation
 
-Download the [v0.1.0 source archive](https://github.com/muggeotruslow-afk/job-scout/releases/tag/v0.1.0) and extract it into a directory. Explicitly ask your AI client to use that directory's `SKILL.md`. If an older global skill has the same name, specify this directory to avoid selecting the old copy.
+Download the [v0.1.1 source archive](https://github.com/muggeotruslow-afk/job-scout/releases/tag/v0.1.1) and extract it into a directory. Explicitly ask your AI client to use that directory's `SKILL.md`. If an older global skill has the same name, specify this directory to avoid selecting the old copy.
 
 Python 3.10+ is required. Browser collection and verification need Node.js 20+ and Playwright. Windows has been tested; macOS/Linux have not completed end-to-end acceptance.
 

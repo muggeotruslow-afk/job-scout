@@ -7,7 +7,7 @@
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-orange" alt="License: MIT"></a>
   <img src="https://img.shields.io/badge/platform-Windows-blue" alt="Tested platform: Windows">
-  <a href="https://github.com/muggeotruslow-afk/job-scout/releases/tag/v0.1.0"><img src="https://img.shields.io/badge/release-v0.1.0-blue" alt="Release v0.1.0"></a>
+  <a href="https://github.com/muggeotruslow-afk/job-scout/releases/tag/v0.1.1"><img src="https://img.shields.io/badge/release-v0.1.1-blue" alt="Release v0.1.1"></a>
   <img src="https://img.shields.io/badge/type-AI%20Skill-teal" alt="AI Skill">
 </p>
 
@@ -19,7 +19,7 @@
 
 这是 **AI Skill + 抓取与核验脚本**。脚本负责获取、整理岗位和核验页面；AI 负责理解简历、映射岗位要求、评分和输出报告。Python 脚本不会独立生成匹配分，也不会提交申请。
 
-首版：**v0.1.0**。下载源码包与演示视频见 [GitHub Release](https://github.com/muggeotruslow-afk/job-scout/releases/tag/v0.1.0)。
+首版：**v0.1.1**。下载源码包与演示视频见 [GitHub Release](https://github.com/muggeotruslow-afk/job-scout/releases/tag/v0.1.1)。
 
 ## 演示
 
@@ -33,7 +33,7 @@ https://github.com/user-attachments/assets/19e9ab97-dff8-4127-ad09-2e77daa500b1
 
 https://github.com/user-attachments/assets/9e721f27-a07c-4068-85d4-3b7c0f197d82
 
-[高清成片与源码下载](https://github.com/muggeotruslow-afk/job-scout/releases/tag/v0.1.0)
+[高清成片与源码下载](https://github.com/muggeotruslow-afk/job-scout/releases/tag/v0.1.1)
 
 演示使用事先确认的虚构候选人资料。下载项目后不带已确认画像，首次使用会引导你导入自己的材料；岗位数量与核验状态是录制当时的结果。
 
@@ -207,7 +207,7 @@ npm test
 
 发布包以根目录 `release-files.json` 为唯一打包清单，运行 `python scripts/build_release.py` 生成到 `local/releases/`。不要压缩整个开发目录；Git忽略规则不会自动作用于普通压缩包。包内不含画像、录屏、node_modules或验收记录，依赖仍按安装说明配置。
 
-`local/release-validation.json` 和 `local/prepare_clean_install.py` 是早期验收记录，不再作为发布清单或安装入口。最新逐项核查记录在本地 `local/release-audit/`；测试数量以当前运行输出为准。
+发布文件以 `release-files.json` 为准；测试数量以当前运行输出为准。
 
 2026-10-03 验收：
 

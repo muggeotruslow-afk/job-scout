@@ -1,8 +1,12 @@
 {
   "name": "job-scout-skill",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "type": "module",
-  "scripts": {"test": "node --test tests/test_apply_controls.mjs tests/test_verification_urls.mjs tests/test_liveness.mjs tests/test_result_metadata.mjs tests/test_verifier_args.mjs"},
-  "dependencies": {"playwright": "1.58.1"}
+  "scripts": {
+    "test": "node --test tests/test_apply_controls.mjs tests/test_verification_urls.mjs tests/test_liveness.mjs tests/test_result_metadata.mjs tests/test_verifier_args.mjs"
+  },
+  "dependencies": {
+    "playwright": "1.58.1"
+  }
 }
