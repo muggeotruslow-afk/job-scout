@@ -1,11 +1,13 @@
 [
   ".gitignore",
   "LICENSE",
+  "README.en.md",
   "README.md",
   "RELEASE_NOTES.md",
   "SKILL.md",
   "THIRD_PARTY_NOTICES.md",
   "agents/openai.yaml",
+  "assets/job-scout-icon.png",
   "examples/applications.md",
   "examples/candidate.md",
   "examples/profile.example.json",

@@ -1,4 +1,19 @@
-# Job Scout
+<p align="center"><img src="assets/job-scout-icon.png" alt="Job Scout" width="160"></p>
+
+<h1 align="center">Job Scout</h1>
+
+<p align="center"><strong>描述目标 → 发现官网岗位 → 证据匹配 → 核验链接</strong></p>
+
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-orange" alt="License: MIT"></a>
+  <img src="https://img.shields.io/badge/platform-Windows-blue" alt="Tested platform: Windows">
+  <a href="https://github.com/muggeotruslow-afk/job-scout/releases/tag/v0.1.0"><img src="https://img.shields.io/badge/release-v0.1.0-blue" alt="Release v0.1.0"></a>
+  <img src="https://img.shields.io/badge/type-AI%20Skill-teal" alt="AI Skill">
+</p>
+
+<p align="center"><strong>简体中文</strong> · <a href="README.en.md">English</a></p>
+
+---
 
 用一句话寻找实习岗位，读取官网完整 JD，并根据使用者的真实简历解释资格门槛、匹配分和投递优先级。
 
@@ -8,8 +23,17 @@
 
 ## 演示
 
-- [一句话找岗完整演示（约45秒）](https://github.com/muggeotruslow-afk/job-scout/releases/download/v0.1.0/job-scout-search-demo.mp4)：下达指令、抓取、筛选和输出匹配理由。过程已加速，实际耗时约5分钟。
-- [打开官网岗位链接（约15秒）](https://github.com/muggeotruslow-afk/job-scout/releases/download/v0.1.0/job-scout-official-links-demo.mp4)：依次打开前三条推荐对应的百度官网详情。
+### 一句话找岗完整演示（约45秒）
+
+https://github.com/user-attachments/assets/19e9ab97-dff8-4127-ad09-2e77daa500b1
+
+过程已加速，实际耗时约5分钟。
+
+### 打开官网岗位链接（约15秒）
+
+https://github.com/user-attachments/assets/9e721f27-a07c-4068-85d4-3b7c0f197d82
+
+[高清成片与源码下载](https://github.com/muggeotruslow-afk/job-scout/releases/tag/v0.1.0)
 
 演示使用事先确认的虚构候选人资料。下载项目后不带已确认画像，首次使用会引导你导入自己的材料；岗位数量与核验状态是录制当时的结果。
 

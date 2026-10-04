@@ -25,7 +25,7 @@ def public_files(root):
             raise ValueError('Invalid release path: ' + name)
         if any(p in PRIVATE or p.startswith('.env') or p.startswith('tmp') for p in relative.parts):
             raise ValueError('Private/temporary file cannot be released: ' + name)
-        if relative.parts[0] not in {'scripts', 'references', 'tests', 'examples', 'agents'} and len(relative.parts) > 1:
+        if relative.parts[0] not in {'scripts', 'references', 'tests', 'examples', 'agents', 'assets'} and len(relative.parts) > 1:
             raise ValueError('Unapproved release directory: ' + name)
         if relative.name == 'profile.json' or name.endswith(('.mp4', '.pyc', '.docx')):
             raise ValueError('Candidate/media/cache file cannot be released: ' + name)
